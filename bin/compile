@@ -156,7 +156,7 @@ echo "export PATH=\"\$HOME/vendor/node/bin:\$HOME/bin:\$HOME/node_modules/.bin:\
     npm install -g grunt-cli
     npm install grunt
     echo "-----> Found Gruntfile, running grunt heroku:$NODE_ENV task"
-    grunt heroku:$NODE_ENV
+    grunt --force heroku:$NODE_ENV
   else
     echo "-----> No Gruntfile (grunt.js, Gruntfile.js, Gruntfile.coffee) found"
   fi
